@@ -7,19 +7,7 @@ Project contains 3 part:
 * Web App to show result and entry text to classify.
 
 <b>File Description</b>
-          |-- app
-                |-- templates
-                        |-- go.html
-                        |-- master.html
-                |-- run.py
-          |-- data
-                |-- disaster_message.csv
-                |-- disaster_categories.csv
-                |-- DisasterResponse.db
-                |-- process_data.py
-          |-- models
-                |-- classifier.pkl
-                |-- train_classifier.py
+![image](https://user-images.githubusercontent.com/117885173/214674868-73b780e8-06f2-4683-856c-dfb7a578ddc3.png)
   
 <b>Instructions</b>
 
