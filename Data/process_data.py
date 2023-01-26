@@ -46,6 +46,8 @@ def clean_data(df):
         categories[column] = categories[column].str[-1]
         categories[column] =  categories[column].astype(int)
     
+    categories.replace(2, 1, inplace=True)
+    
     #Merge splited categories
     df = df.drop('categories',axis=1)
     df = pd.concat([df,categories],axis=1)
@@ -65,7 +67,7 @@ def save_data(df, database_filename):
     """
     
     engine = create_engine('sqlite:///{}'.format(database_filename))
-    df.to_sql('disaster_messages_tbl', engine, index=False)
+    df.to_sql('disaster_messages_tbl', engine, if_exists = 'replace', index=False)
 
 
 def main():
